@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Biodata Zia</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 40px 40px 40px 20px;
+    background: #f7f7f9;
+    color: #2b2b33;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Judul */
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Judul section */
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+    color: #16213e;
+    border-bottom: 2px solid #16213e;
+    padding-bottom: 6px;
+  }
+
+  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #0f3460;
+    margin-top: 24px;
+  }
+
+  /* Foto tetap di tengah */
+  img.foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #16213e;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Link */
+  a {
+    color: #0f3460;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+
+  a:hover {
+    border-color: #0f3460;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  /* Navigasi tetap di tengah */
+  nav {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  nav a {
+    margin-right: 15px;
+    font-weight: 600;
+  }
+
+  /* Data dibuat menjorok ke kiri */
+  .data {
+    background: #fff;
+    padding: 20px 24px;
+    max-width: 700px;
+    margin: 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .data p {
+    margin: 10px 0;
+    font-size: 0.98rem;
+  }
+
+  .label {
+    font-weight: 600;
+    color: #16213e;
+    margin-right: 4px;
+  }
+
+  #pendidikan p:not(.data p) {
+    max-width: 700px;
+    margin: 8px 0;
+    font-size: 0.98rem;
+  }
+
+  /* Profil link tetap di tengah */
+  .profil-link {
+    text-align: center;
+    margin-top: 16px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Judul tetap di tengah -->
+<h1>Biodata Diri</h1>
+
+<!-- Foto tetap di tengah -->
+<img class="foto"
+     src="src/profil.jpeg"
+     alt="Foto Profil Zia">
+
+<!-- Navigasi tetap di tengah -->
+<nav>
+  <p>
+    Navigasi:
+    <a href="#profil">Data Pribadi</a>
+    <a href="#pendidikan">Riwayat Pendidikan</a>
+  </p>
+</nav>
+
+
+<!-- DATA PRIBADI -->
+<section id="profil">
+
+  <h2>Data Pribadi</h2>
+
+  <div class="data">
+
+    <p>
+      <span class="label">Nama:</span>
+      Zahra Nur Fauziah
+    </p>
+
+    <p>
+      <span class="label">Status:</span>
+      Mahasiswa IT
+    </p>
+
+    <p>
+      <span class="label">Domisili:</span>
+      Indonesia
+    </p>
+
+    <p>
+      <span class="label">Pekerjaan:</span>
+      Intern Software Developer
+    </p>
+
+    <p>
+      <span class="label">Proyek Sampingan:</span>
+      PixelForge Academy, Weather Analysis System,
+      Dashboard Analytics Website, News Mandiri Application
+    </p>
+
+    <p>
+      <span class="label">Bidang yang Dikembangkan:</span>
+      Web Development, Artificial Intelligence,
+      Mobile Development, QA
+    </p>
+
+  </div>
+
+  <p class="profil-link">
+    Profil lebih lanjut dapat dilihat di
+    <a href="https://jakarta.telkomuniversity.ac.id/"
+       target="_blank"
+       rel="noopener">
+       situs kampus
+    </a>.
+  </p>
+
+</section>
+
+
+<!-- RIWAYAT PENDIDIKAN -->
+<section id="pendidikan">
+
+  <h2>Riwayat Pendidikan</h2>
+
+  <div class="data">
+
+    <p>
+      <span class="label">Perguruan Tinggi:</span>
+      Telkom University Jakarta
+    </p>
+
+  </div>
+
+  <h3>Experiences</h3>
+
+  <p>
+    Assistant Practicum - Telkom University Jakarta
+  </p>
+
+  <p>
+    Mobile Application Developer Intern -
+    PT Bank Mandiri (Persero) Tbk.
+  </p>
+
+  <p>
+    Software Engineer Intern -
+    PT Integra Padma Mandiri
+  </p>
+
+</section>
+
+</body>
+</html>
