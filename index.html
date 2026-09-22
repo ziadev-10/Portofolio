@@ -2,7 +2,8 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Biodata Zia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Zahra Nur Fauziah</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* Judul */
   h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -30,7 +30,6 @@
     margin-bottom: 30px;
   }
 
-  /* Judul section */
   h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -39,19 +38,19 @@
     color: #16213e;
     border-bottom: 2px solid #16213e;
     padding-bottom: 6px;
+    margin-bottom: 20px;
   }
 
   h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 1.05rem;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
+    letter-spacing: 0.3px;
     color: #0f3460;
     margin-top: 24px;
+    margin-bottom: 8px;
   }
 
-  /* Foto tetap di tengah */
   img.foto {
     width: 150px;
     height: 150px;
@@ -62,7 +61,6 @@
     margin: 0 auto;
   }
 
-  /* Link */
   a {
     color: #0f3460;
     font-weight: 500;
@@ -79,10 +77,10 @@
     margin-bottom: 40px;
   }
 
-  /* Navigasi tetap di tengah */
   nav {
     text-align: center;
     font-size: 0.95rem;
+    margin: 25px 0 40px;
   }
 
   nav a {
@@ -90,7 +88,6 @@
     font-weight: 600;
   }
 
-  /* Data dibuat menjorok ke kiri */
   .data {
     background: #fff;
     padding: 20px 24px;
@@ -111,42 +108,158 @@
     margin-right: 4px;
   }
 
-  #pendidikan p:not(.data p) {
+  .description {
     max-width: 700px;
-    margin: 8px 0;
+    margin: 0;
     font-size: 0.98rem;
   }
 
-  /* Profil link tetap di tengah */
-  .profil-link {
+  .experience {
+    max-width: 700px;
+    margin: 0;
+  }
+
+  .experience p {
+    margin: 6px 0;
+  }
+
+  .experience ul {
+    margin-top: 6px;
+    padding-left: 22px;
+  }
+
+  .experience li {
+    margin-bottom: 6px;
+  }
+
+  .skills {
+    max-width: 700px;
+    margin: 0;
+    padding-left: 22px;
+  }
+
+  .skills li {
+    margin-bottom: 6px;
+  }
+
+  .education-item {
+    max-width: 700px;
+    margin-bottom: 18px;
+  }
+
+  .education-item strong {
+    color: #16213e;
+  }
+
+  .contact {
     text-align: center;
-    margin-top: 16px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+  }
+
+  .portfolio {
+    max-width: 700px;
+    margin: 0;
+    background: #fff;
+    padding: 20px 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  @media (max-width: 768px) {
+    body {
+      margin: 25px 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 5px 8px;
+    }
+
+    .data,
+    .description,
+    .experience,
+    .skills,
+    .education-item,
+    .portfolio {
+      max-width: 100%;
+    }
   }
 </style>
 </head>
 
 <body>
 
-<!-- Judul tetap di tengah -->
+<!-- JUDUL -->
 <h1>Biodata Diri</h1>
 
-<!-- Foto tetap di tengah -->
+<!-- FOTO -->
 <img class="foto"
      src="src/profil.jpeg"
-     alt="Foto Profil Zia">
+     alt="Foto Profil Zahra Nur Fauziah">
 
-<!-- Navigasi tetap di tengah -->
+<!-- KONTAK -->
+<div class="contact">
+  <p>
+    <a href="mailto:fauziahzahra212@gmail.com">
+      fauziahzahra212@gmail.com
+    </a>
+    &nbsp; | &nbsp;
+    <a href="tel:+6282246483724">
+      +62 822-4648-3724
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.linkedin.com/in/zahra-nur-fauziah-020765374/"
+       target="_blank"
+       rel="noopener">
+       LinkedIn
+    </a>
+    &nbsp; | &nbsp;
+    <a href="https://github.com/ziadev-10"
+       target="_blank"
+       rel="noopener">
+       GitHub
+    </a>
+  </p>
+</div>
+
+<!-- NAVIGASI -->
 <nav>
   <p>
     Navigasi:
-    <a href="#profil">Data Pribadi</a>
-    <a href="#pendidikan">Riwayat Pendidikan</a>
+    <a href="#profil">Profil</a>
+    <a href="#data-pribadi">Data Pribadi</a>
+    <a href="#skills">Key Skills</a>
+    <a href="#organisasi">Organizations</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#pendidikan">Education</a>
+    <a href="#portfolio">Portfolio</a>
   </p>
 </nav>
 
 
-<!-- DATA PRIBADI -->
+<!-- PROFIL -->
 <section id="profil">
+
+  <h2>Profil</h2>
+
+  <p class="description">
+    Information Technology student at Telkom University Jakarta with
+    experience in Web and Mobile Application Development. Skilled in
+    building responsive web applications and mobile solutions, with
+    hands-on experience from academic projects, research activities,
+    and professional internships. Eager to contribute to innovative
+    technology solutions and continuously expand software development
+    expertise.
+  </p>
+
+</section>
+
+
+<!-- DATA PRIBADI -->
+<section id="data-pribadi">
 
   <h2>Data Pribadi</h2>
 
@@ -159,76 +272,249 @@
 
     <p>
       <span class="label">Status:</span>
-      Mahasiswa IT
+      Mahasiswa S1 Teknologi Informasi
+    </p>
+
+    <p>
+      <span class="label">Universitas:</span>
+      Telkom University Jakarta
     </p>
 
     <p>
       <span class="label">Domisili:</span>
-      Indonesia
+      Bekasi, Indonesia
     </p>
 
     <p>
-      <span class="label">Pekerjaan:</span>
-      Intern Software Developer
+      <span class="label">Email:</span>
+      <a href="mailto:fauziahzahra212@gmail.com">
+        fauziahzahra212@gmail.com
+      </a>
     </p>
 
     <p>
-      <span class="label">Proyek Sampingan:</span>
-      PixelForge Academy, Weather Analysis System,
-      Dashboard Analytics Website, News Mandiri Application
+      <span class="label">No. Telepon:</span>
+      <a href="tel:+6282246483724">
+        +62 822-4648-3724
+      </a>
     </p>
 
     <p>
-      <span class="label">Bidang yang Dikembangkan:</span>
-      Web Development, Artificial Intelligence,
-      Mobile Development, QA
+      <span class="label">LinkedIn:</span>
+      <a href="https://www.linkedin.com/in/zahra-nur-fauziah-020765374/"
+         target="_blank"
+         rel="noopener">
+        LinkedIn Profile
+      </a>
+    </p>
+
+    <p>
+      <span class="label">GitHub:</span>
+      <a href="https://github.com/ziadev-10"
+         target="_blank"
+         rel="noopener">
+        github.com/ziadev-10
+      </a>
     </p>
 
   </div>
 
-  <p class="profil-link">
-    Profil lebih lanjut dapat dilihat di
-    <a href="https://jakarta.telkomuniversity.ac.id/"
-       target="_blank"
-       rel="noopener">
-       situs kampus
-    </a>.
-  </p>
+</section>
+
+
+<!-- KEY SKILLS -->
+<section id="skills">
+
+  <h2>Key Skills</h2>
+
+  <ul class="skills">
+    <li>Web Development</li>
+    <li>Microsoft Office</li>
+    <li>Communication &amp; Presentation</li>
+    <li>Project Management &amp; Coordination</li>
+    <li>REST API Development</li>
+    <li>Database Management (MySQL/PostgreSQL)</li>
+    <li>Git &amp; Version Control</li>
+  </ul>
 
 </section>
 
 
-<!-- RIWAYAT PENDIDIKAN -->
-<section id="pendidikan">
+<!-- ORGANISASI -->
+<section id="organisasi">
 
-  <h2>Riwayat Pendidikan</h2>
+  <h2>Organizations</h2>
 
-  <div class="data">
+  <div class="experience">
+
+    <h3>Academic Division Staff</h3>
 
     <p>
-      <span class="label">Perguruan Tinggi:</span>
+      <strong>
+        Informatics Engineering Student Association (HMIT)
+      </strong>
+    </p>
+
+    <p>
       Telkom University Jakarta
     </p>
 
   </div>
 
-  <h3>Experiences</h3>
+</section>
 
-  <p>
-    Assistant Practicum - Telkom University Jakarta
-  </p>
 
-  <p>
-    Mobile Application Developer Intern -
-    PT Bank Mandiri (Persero) Tbk.
-  </p>
+<!-- EXPERIENCES -->
+<section id="experiences">
 
-  <p>
-    Software Engineer Intern -
-    PT Integra Padma Mandiri
-  </p>
+  <h2>Experiences</h2>
+
+  <div class="experience">
+
+    <h3>Assistant Practicum</h3>
+
+    <p>
+      <strong>Telkom University Jakarta</strong>
+    </p>
+
+    <ul>
+      <li>
+        Assisted lecturers in conducting programming and software
+        development laboratory sessions.
+      </li>
+
+      <li>
+        Guided students in understanding programming concepts,
+        debugging code, and completing practical assignments.
+      </li>
+
+      <li>
+        Provided technical support during laboratory activities
+        and practical examinations.
+      </li>
+    </ul>
+
+
+    <h3>Mobile Application Developer Intern</h3>
+
+    <p>
+      <strong>PT Bank Mandiri (Persero) Tbk.</strong>
+    </p>
+
+    <ul>
+      <li>
+        Contributed to the development and enhancement of mobile
+        banking application features.
+      </li>
+
+      <li>
+        Implemented and maintained application functionalities
+        based on business and user requirements.
+      </li>
+
+      <li>
+        Collaborated with UI/UX designers, backend developers,
+        and QA engineers throughout the development lifecycle.
+      </li>
+
+      <li>
+        Conducted testing, debugging, and performance optimization
+        to improve application quality and user experience.
+      </li>
+    </ul>
+
+
+    <h3>Software Engineer Intern</h3>
+
+    <p>
+      <strong>PT Integra Padma Mandiri</strong>
+    </p>
+
+    <ul>
+      <li>
+        Developed and maintained responsive web interfaces based
+        on project and business requirements.
+      </li>
+
+      <li>
+        Implemented frontend features and interactive components
+        to improve usability and user experience.
+      </li>
+
+      <li>
+        Integrated RESTful APIs with frontend applications for
+        efficient data presentation and processing.
+      </li>
+
+      <li>
+        Conducted testing, debugging, and UI improvements to
+        ensure application quality and performance.
+      </li>
+    </ul>
+
+  </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+<section id="pendidikan">
+
+  <h2>Education</h2>
+
+  <div class="education-item">
+
+    <p>
+      <strong>B.Sc. in Information Technology</strong>
+    </p>
+
+    <p>
+      Telkom University Jakarta
+    </p>
+
+  </div>
+
+  <div class="education-item">
+
+    <p>
+      <strong>
+        Al Arabi Integrated Islamic Senior High School
+      </strong>
+    </p>
+
+    <p>
+      Science Program
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+
+  <h2>Portfolio</h2>
+
+  <div class="portfolio">
+
+    <p>
+      Untuk melihat portfolio dan project yang telah dikerjakan,
+      silakan mengunjungi:
+    </p>
+
+    <p>
+      <a href="https://portofoliozahranurfauziah.my.canva.site/"
+         target="_blank"
+         rel="noopener">
+        Portfolio Zahra Nur Fauziah
+      </a>
+    </p>
+
+  </div>
 
 </section>
 
 </body>
 </html>
+
