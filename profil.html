@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Biodata Zahra Nur Fauziah</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+
+    /* =========================
+       DASAR HALAMAN
+    ========================= */
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+
+      margin: 40px 40px 40px 20px;
+
+      background: #ffffff;
+      color: #2b2b33;
+
+      -webkit-font-smoothing: antialiased;
+    }
+
+
+    /* =========================
+       HEADING
+    ========================= */
+
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+
+      letter-spacing: 0.5px;
+
+      color: #1a1a2e;
+
+      text-align: center;
+
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      letter-spacing: 0.3px;
+
+      color: #16213e;
+
+      border-bottom: 2px solid #16213e;
+
+      padding-bottom: 6px;
+
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+
+      letter-spacing: 0.3px;
+
+      color: #0f3460;
+
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+
+    /* =========================
+       FOTO PROFIL
+    ========================= */
+
+    img.foto {
+      width: 150px;
+      height: 150px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      border: 3px solid #16213e;
+
+      display: block;
+
+      margin: 0 auto;
+    }
+
+
+    /* =========================
+       LINK
+    ========================= */
+
+    a {
+      color: #0f3460;
+
+      font-weight: 500;
+
+      text-decoration: none;
+
+      transition: 0.2s ease;
+    }
+
+    a:hover {
+      color: #16213e;
+
+      text-decoration: underline;
+    }
+
+
+    /* =========================
+       KONTAK
+    ========================= */
+
+    .contact {
+      text-align: center;
+
+      margin-top: 15px;
+
+      font-size: 0.95rem;
+    }
+
+    .contact p {
+      margin: 7px 0;
+    }
+
+
+    /* =========================
+       NAVIGASI
+    ========================= */
+
+    nav {
+      text-align: center;
+
+      font-size: 0.95rem;
+
+      margin: 25px 0 40px;
+
+      padding: 12px;
+
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    nav a {
+      margin: 0 7px;
+
+      font-weight: 600;
+    }
+
+
+    /* =========================
+       SECTION
+    ========================= */
+
+    section {
+      margin-bottom: 40px;
+    }
+
+
+    /* =========================
+       PROFIL
+    ========================= */
+
+    .description {
+      max-width: 700px;
+
+      margin: 0;
+
+      font-size: 0.98rem;
+    }
+
+
+    /* =========================
+       DATA PRIBADI
+    ========================= */
+
+    .data {
+      background: #ffffff;
+
+      padding: 20px 24px;
+
+      max-width: 700px;
+
+      margin: 0;
+
+      border: 1px solid #eeeeee;
+
+      border-radius: 8px;
+    }
+
+    .data p {
+      margin: 10px 0;
+
+      font-size: 0.98rem;
+    }
+
+    .label {
+      font-weight: 600;
+
+      color: #16213e;
+
+      margin-right: 4px;
+    }
+
+
+    /* =========================
+       SKILLS
+    ========================= */
+
+    .skills {
+      max-width: 700px;
+
+      margin: 0;
+
+      padding-left: 22px;
+    }
+
+    .skills li {
+      margin-bottom: 6px;
+    }
+
+
+    /* =========================
+       ORGANISASI & EXPERIENCE
+    ========================= */
+
+    .experience {
+      max-width: 700px;
+
+      margin: 0;
+    }
+
+    .experience p {
+      margin: 6px 0;
+    }
+
+    .experience ul {
+      margin-top: 6px;
+
+      padding-left: 22px;
+    }
+
+    .experience li {
+      margin-bottom: 6px;
+    }
+
+
+    /* =========================
+       EDUCATION
+    ========================= */
+
+    .education-item {
+      max-width: 700px;
+
+      margin-bottom: 18px;
+    }
+
+    .education-item strong {
+      color: #16213e;
+    }
+
+
+    /* =========================
+       PORTFOLIO & HOBBY
+    ========================= */
+
+    .portfolio-hobby {
+      display: flex;
+
+      gap: 25px;
+
+      max-width: 700px;
+    }
+
+    .portfolio {
+      flex: 1;
+
+      background: #ffffff;
+
+      padding: 20px 24px;
+
+      border: 1px solid #eeeeee;
+
+      border-radius: 8px;
+
+      box-sizing: border-box;
+    }
+
+    .portfolio h2 {
+      margin-top: 0;
+    }
+
+
+    /* =========================
+       GAMBAR BASKET PNG
+    ========================= */
+
+    .basket-image {
+      width: 180px;
+      height: 130px;
+
+      object-fit: contain;
+
+      border-radius: 10px;
+
+      border: 2px solid #16213e;
+
+      display: block;
+
+      margin-top: 12px;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 768px) {
+
+      body {
+        margin: 25px 20px;
+      }
+
+      nav a {
+        display: inline-block;
+
+        margin: 5px 7px;
+      }
+
+      .data,
+      .description,
+      .experience,
+      .skills,
+      .education-item {
+        max-width: 100%;
+      }
+
+      .portfolio-hobby {
+        flex-direction: column;
+
+        max-width: 100%;
+      }
+
+      .portfolio {
+        width: 100%;
+      }
+
+      .basket-image {
+        width: 100%;
+
+        max-width: 250px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       JUDUL
+  ========================= -->
+
+  <h1>Biodata Diri</h1>
+
+
+  <!-- =========================
+       FOTO PROFIL
+  ========================= -->
+
+  <img
+    class="foto"
+    src="src/profil.jpeg"
+    alt="Foto Profil Zahra Nur Fauziah"
+  >
+
+
+  <!-- =========================
+       KONTAK
+  ========================= -->
+
+  <div class="contact">
+
+    <p>
+
+      <a href="mailto:fauziahzahra212@gmail.com">
+        fauziahzahra212@gmail.com
+      </a>
+
+      &nbsp; | &nbsp;
+
+      <a href="tel:+6282246483724">
+        +62 822-4648-3724
+      </a>
+
+    </p>
+
+
+    <p>
+
+      <a
+        href="https://www.linkedin.com/in/zahra-nur-fauziah-020765374/"
+        target="_blank"
+        rel="noopener"
+      >
+        LinkedIn
+      </a>
+
+      &nbsp; | &nbsp;
+
+      <a
+        href="https://github.com/ziadev-10"
+        target="_blank"
+        rel="noopener"
+      >
+        GitHub
+      </a>
+
+    </p>
+
+  </div>
+
+
+  <!-- =========================
+       NAVIGASI
+  ========================= -->
+
+  <nav>
+
+    Navigasi:
+
+    <a href="#profil">
+      Profil
+    </a>
+
+    <a href="#data-pribadi">
+      Data Pribadi
+    </a>
+
+    <a href="#skills">
+      Key Skills
+    </a>
+
+    <a href="#organisasi">
+      Organizations
+    </a>
+
+    <a href="#experiences">
+      Experiences
+    </a>
+
+    <a href="#pendidikan">
+      Education
+    </a>
+
+    <a href="#portfolio">
+      Portfolio
+    </a>
+
+    <a href="#hobby">
+      Hobby
+    </a>
+
+  </nav>
+
+
+  <!-- =========================
+       PROFIL
+  ========================= -->
+
+  <section id="profil">
+
+    <h2>Profil</h2>
+
+    <p class="description">
+
+      Information Technology student at Telkom University Jakarta
+      with experience in web and mobile application development.
+      Interested in software development and technology.
+
+    </p>
+
+  </section>
+
+
+  <!-- =========================
+       DATA PRIBADI
+  ========================= -->
+
+  <section id="data-pribadi">
+
+    <h2>Data Pribadi</h2>
+
+    <div class="data">
+
+      <p>
+        <span class="label">Nama:</span>
+        Zahra Nur Fauziah
+      </p>
+
+      <p>
+        <span class="label">Status:</span>
+        Mahasiswa S1 Teknologi Informasi
+      </p>
+
+      <p>
+        <span class="label">Universitas:</span>
+        Telkom University Jakarta
+      </p>
+
+      <p>
+        <span class="label">Domisili:</span>
+        Bekasi, Indonesia
+      </p>
+
+      <p>
+
+        <span class="label">Email:</span>
+
+        <a href="mailto:fauziahzahra212@gmail.com">
+          fauziahzahra212@gmail.com
+        </a>
+
+      </p>
+
+      <p>
+
+        <span class="label">No. Telepon:</span>
+
+        <a href="tel:+6282246483724">
+          +62 822-4648-3724
+        </a>
+
+      </p>
+
+      <p>
+
+        <span class="label">LinkedIn:</span>
+
+        <a
+          href="https://www.linkedin.com/in/zahra-nur-fauziah-020765374/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn Profile
+        </a>
+
+      </p>
+
+      <p>
+
+        <span class="label">GitHub:</span>
+
+        <a
+          href="https://github.com/ziadev-10"
+          target="_blank"
+          rel="noopener"
+        >
+          github.com/ziadev-10
+        </a>
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       KEY SKILLS
+  ========================= -->
+
+  <section id="skills">
+
+    <h2>Key Skills</h2>
+
+    <ul class="skills">
+
+      <li>
+        Web Development
+      </li>
+
+      <li>
+        Microsoft Office
+      </li>
+
+      <li>
+        Communication &amp; Presentation
+      </li>
+
+      <li>
+        Project Management &amp; Coordination
+      </li>
+
+      <li>
+        REST API Development
+      </li>
+
+      <li>
+        Database Management (MySQL/PostgreSQL)
+      </li>
+
+      <li>
+        Git &amp; Version Control
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- =========================
+       ORGANISASI
+  ========================= -->
+
+  <section id="organisasi">
+
+    <h2>Organizations</h2>
+
+    <div class="experience">
+
+      <h3>
+        Academic Division Staff
+      </h3>
+
+      <p>
+
+        <strong>
+          Informatics Engineering Student Association (HMIT)
+        </strong>
+
+      </p>
+
+      <p>
+        Telkom University Jakarta
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       EXPERIENCES
+  ========================= -->
+
+  <section id="experiences">
+
+    <h2>Experiences</h2>
+
+
+    <!-- Assistant Practicum -->
+
+    <div class="experience">
+
+      <h3>
+        Assistant Practicum
+      </h3>
+
+      <p>
+        <strong>
+          Telkom University Jakarta
+        </strong>
+      </p>
+
+      <ul>
+
+        <li>
+          Assisted lecturers in conducting programming
+          and software development laboratory sessions.
+        </li>
+
+        <li>
+          Guided students in understanding programming concepts,
+          debugging code, and completing practical assignments.
+        </li>
+
+        <li>
+          Provided technical support during laboratory activities
+          and practical examinations.
+        </li>
+
+      </ul>
+
+
+      <!-- Mobile Application Developer -->
+
+      <h3>
+        Mobile Application Developer Intern
+      </h3>
+
+      <p>
+        <strong>
+          PT Bank Mandiri (Persero) Tbk.
+        </strong>
+      </p>
+
+      <ul>
+
+        <li>
+          Contributed to the development and enhancement
+          of mobile application features.
+        </li>
+
+        <li>
+          Implemented application functionalities based
+          on business and user requirements.
+        </li>
+
+        <li>
+          Collaborated with UI/UX designers, backend developers,
+          and QA engineers.
+        </li>
+
+        <li>
+          Conducted testing, debugging, and performance
+          improvements.
+        </li>
+
+      </ul>
+
+
+      <!-- Software Engineer -->
+
+      <h3>
+        Software Engineer Intern
+      </h3>
+
+      <p>
+        <strong>
+          PT Integra Padma Mandiri
+        </strong>
+      </p>
+
+      <ul>
+
+        <li>
+          Developed and maintained responsive web interfaces
+          based on project requirements.
+        </li>
+
+        <li>
+          Implemented frontend features and interactive
+          components.
+        </li>
+
+        <li>
+          Integrated RESTful APIs with frontend applications.
+        </li>
+
+        <li>
+          Conducted testing, debugging, and UI improvements.
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       EDUCATION
+  ========================= -->
+
+  <section id="pendidikan">
+
+    <h2>Education</h2>
+
+
+    <div class="education-item">
+
+      <p>
+
+        <strong>
+          B.Sc. in Information Technology
+        </strong>
+
+      </p>
+
+      <p>
+        Telkom University Jakarta
+      </p>
+
+    </div>
+
+
+    <div class="education-item">
+
+      <p>
+
+        <strong>
+          Al Arabi Integrated Islamic Senior High School
+        </strong>
+
+      </p>
+
+      <p>
+        Science Program
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PORTFOLIO & HOBBY
+  ========================= -->
+
+  <section>
+
+    <div class="portfolio-hobby">
+
+
+      <!-- PORTFOLIO -->
+
+      <div
+        class="portfolio"
+        id="portfolio"
+      >
+
+        <h2>
+          Portfolio
+        </h2>
+
+        <p>
+          My portfolio and projects can be viewed through
+          the link below.
+        </p>
+
+        <p>
+
+          <a
+            href="https://portofoliozahranurfauziah.my.canva.site/"
+            target="_blank"
+            rel="noopener"
+          >
+            Portfolio Zahra Nur Fauziah
+          </a>
+
+        </p>
+
+      </div>
+
+
+      <!-- HOBBY -->
+
+      <div
+        class="portfolio"
+        id="hobby"
+      >
+
+        <h2>
+          Hobby
+        </h2>
+
+        <p>
+
+          <strong>
+            🏀 Basketball
+          </strong>
+
+        </p>
+
+        <!-- File gambar PNG -->
+        <img
+          class="basket-image"
+          src="src/basket.png"
+          alt="Basketball"
+        >
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+</body>
+
+</html>
